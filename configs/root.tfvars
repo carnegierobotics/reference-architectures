@@ -1,13 +1,13 @@
 # This is a terraform configuration file
 
 # The "apex" service discovery domain for *all* infrastructure
-domain = "test.co"
+domain = "carnegerobotics.cloud"
 
 # The global namespace that should be shared by all accounts
-namespace = "test"
+namespace = "crl"
 
 # The default region for this account
-aws_region = "us-west-2"
+aws_region = "us-east-2"
 
 # Network CIDR of Organization
 org_network_cidr    = "10.0.0.0/8"
@@ -72,22 +72,19 @@ templates = [
 ]
 
 # Account email address format (e.g. `ops+%s@example.co`). This is not easily changed later.
-account_email = "ops+%s@test.co"
+account_email = "devops_%s@carnegierobotics.com"
 
 # List of accounts to enable
 accounts_enabled = [
   "dev",
-  "staging",
   "prod",
-  "testing",
-  "data",
-  "corp",
   "audit",
 ]
 
 # Administrator IAM usernames mapped to their keybase usernames for password encryption
 users = {
-#  "erik@cloudposse.com" = "osterman"
+  "jhosteny" = "jhosteny",
+  "rummik" = "rummik"
 }
 
 # Geodesic Base Image (don't change this unless you know what you're doing)
