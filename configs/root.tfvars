@@ -1,7 +1,7 @@
 # This is a terraform configuration file
 
 # The "apex" service discovery domain for *all* infrastructure
-domain = "carnegerobotics.cloud"
+domain = "carnegierobotics.cloud"
 
 # The global namespace that should be shared by all accounts
 namespace = "crl"
